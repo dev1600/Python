@@ -21,10 +21,11 @@ class Students:
         return self.m3
     
     # When you want class variable use cls
-    # as well as a decoder given below
+    # as well as a decorator given below
     @classmethod
     def get_school(cls):
         return cls.school
+    
     
 s1=Students(35,40,75)
 s2=Students(79,80,45) 
