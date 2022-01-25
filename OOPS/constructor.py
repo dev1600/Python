@@ -1,4 +1,5 @@
 class Computer:
+    
     def __init__(self):
         self.name='Devansh'
         self.age=21
@@ -10,7 +11,7 @@ class Computer:
     def update(self):
         self.age=22
         
-    # Compating objects
+    # Comparing objects
     def compare(self,other):
         if(self.age == other.age):
             return True

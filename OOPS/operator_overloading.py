@@ -5,6 +5,7 @@ class Student:
         self.m2=m2
         
     # Below is used to overload + operator
+    # Similarly for * use __mul__ 
     def __add__(self,other):
         m1=self.m1+other.m1
         m2=self.m2+other.m2
