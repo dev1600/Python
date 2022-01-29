@@ -1,5 +1,14 @@
+import functools
+
 def end_decorator(func):
+    # Following is called a wrapper function
+    # .wraps preserves the information of func
+    # Logically the code will work fine without it
     
+    # We use *args and **kwargs so that we take 
+    # all the parameters passed by the func
+    
+    @functools.wraps(func)
     def wrapper(*args,**kwargs):
         print('Start of decorator')
         result=func(*args,*kwargs)

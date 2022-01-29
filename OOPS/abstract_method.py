@@ -12,8 +12,8 @@ class Rectangle(Shape):
         self.length=6
         self.width=7
         
-    # def area(self):
-    #     return self.length*self.width
+    def area(self):
+        return self.length*self.width
 
 rect=Rectangle()
 print(rect.area())
