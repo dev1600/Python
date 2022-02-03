@@ -9,6 +9,8 @@ from functools import lru_cache
 # so next time the same function is called it can return value
 # instantly
 
+# maxsize =3 means it will store latest 3 calls
+
 @lru_cache(maxsize=3)
 def work(n):
     time.sleep(3)

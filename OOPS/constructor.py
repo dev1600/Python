@@ -1,5 +1,7 @@
 class Computer:
     
+    _a=0    # _varName is used to denote protected variable
+    __b=0   # __varName is used to denote private variable
     def __init__(self):
         self.name='Devansh'
         self.age=21
@@ -23,7 +25,6 @@ c2=Computer()
 # Below prints the address of memory
 print(id(c1))
 c1.update()
-
 if(c1.compare(c2) == False):
     print("Age is not equal")
 else:
